@@ -1,36 +1,34 @@
 # IMSC-1.1_Image_TestContent
 
-This repository was forked from https://github.com/FoxMediaServices/IMSC-1.1_Image_TestContent with the intent to increase the reach of the materials provided, per https://www.w3.org/2019/02/21-tt-minutes.html#item07
+This repository is forked from https://github.com/FoxMediaServices/IMSC-1.1_Image_TestContent with the intent to increase the reach of the materials provided, per https://www.w3.org/2019/02/21-tt-minutes.html#item07
 
 This reel is is for IMSC 1.1 Image based subtitle testing. The items that are tested are all pertinent to subtitles produced for production content. This has been built to help manufacturers with their IMSC 1.1 Image implementations by providing them with a reference IMSC package.
 
-This test content includes the following assets:
-- IMSC1-1_IMAGE_Test-Reel_FMS_v1-0_2019-01-29.zip
-- IMSC1-1_IMAGE_Test-Reel_FMS_v1-0_2019-01-29_Rec709_Backplate.mov*
-- IMSC1-1_IMAGE_Test-Reel_FMS_v1-0_2019-01-29_Rec709_CompositedProxy.mp4*
-- IMSC1-1_IMAGE_Test-Reel_FMS_v1-0_2019-01-29_Rec2020-PQ_Backplate.mov*
-- IMSC1-1_IMAGE_Test-Reel_FMS_v1-0_2019-01-29_Rec2020-PQ_CompositedProxy.mp4*
+This test content consists of the following assets:
 
-    **Please note that these media files are hosted at https://media.w3.org/, and are linked to via .URL  internet shortcut files.*
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20](IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_HLG_Backplate.mxf](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_HLG_Backplate.mxf)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_HLG_CompositedProxy.mov](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_HLG_CompositedProxy.mov)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_Backplate.mxf](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_Backplate.mxf)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_CompositedProxy.mov](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_CompositedProxy.mov)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_Backplate.mxf](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_Backplate.mxf)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_CompositedProxy.mov](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_CompositedProxy.mov)
 
-The IMSC XML file is to be rendered over the Backplate ProRes HQ file. If the IMSC decoding is accurate, it will look exactly the same as the Composited Proxy file. There is both a Rec 709 backplate and proxy, along with a Rec 2020 PQ backplate and proxy. The recommended approach for compositing sRGB subtitles to rec 709 and rec 2020 PQ is:
+The IMSC XML file is to be rendered over the Backplate ProRes HQ file. If the IMSC decoding is accurate, it will look exactly the same as the Composited Proxy file. There is a Rec 709 backplate and proxy, a Rec 2020 PQ backplate and proxy, and an HLG backplate and proxy. The recommended approach for compositing sRGB subtitles to rec 709, rec 2020 PQ, and HLG is:
 
-    sRGB (EOTF 2.4) to 709 Full Range (EOTF 2.4)
-    No conversion is required.
+    sRGB (EOTF 2.2) to 709 (EOTF 2.4)
+    Map the sRGB values from an EOTF of 2.2 to an EOTF of 2.4
 
-    sRGB (EOTF 2.4) to 709 Narrow Range (EOTF 2.4)
-    Scale the sRGB values to narrow range as described in section 6 of RP 2077:2013.
+    sRGB (EOTF 2.2) to PQ 2020 Narrow Range (EOTF PQ)
+    Map the sRGB values to PQ 2020 as described in section Q.1 of the Draft TTML2 Recommendation
 
-    sRGB (EOTF 2.4) to PQ 2020 Full Range (EOTF PQ)
-    Map the sRGB values to PQ 2020 Full Range as described in section Q.1 of the TTML2 Recommendation.
-
-    sRGB (EOTF 2.4) to PQ 2020 Narrow Range (EOTF PQ)
-    Map the sRGB values to PQ 2020 Full Range as described in section Q.1 of the TTML2 Recommendation,
-    then scale those values to narrow range as described in section 6 of RP 2077:2013.
+    sRGB (EOTF 2.0) to HLG Full Range
+    Map the sRGB values to PQ 2020 as described in section Q.2 of the Draft TTML2 Recommendation
 
 The IMSC 1.1 XML file includes in-line comments which describes the purpose of each test.
 
 The backplate includes the following:
+
 - Frame counter and Media Time counter
 - Grid with lines every 5%
 - Yellow crosses at each corner of the text
