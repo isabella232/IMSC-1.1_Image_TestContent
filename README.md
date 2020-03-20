@@ -9,10 +9,10 @@ This test content consists of the following assets:
 - [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20](IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20)
 - [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_HLG_Backplate.mxf](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_HLG_Backplate.mxf)
 - [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_HLG_CompositedProxy.mov](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_HLG_CompositedProxy.mov)
-- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_Backplate.mxf](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_Backplate.mxf)
-- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_CompositedProxy.mov](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_CompositedProxy.mov)
-- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_Backplate.mxf](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_Backplate.mxf)
-- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_CompositedProxy.mov](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_CompositedProxy.mov)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_Backplate.mxf](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_Backplate.mxf)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_CompositedProxy.mov](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec2020-PQ_CompositedProxy.mov)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_Backplate.mxf](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_Backplate.mxf)
+- [IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_CompositedProxy.mov](http://media.w3.org/2020/03/IMSC1-1_IMAGE_Test-Reel_FMS_v4-0_2019-11-20_Rec709_CompositedProxy.mov)
 
 The IMSC XML file is to be rendered over the Backplate ProRes HQ file. If the IMSC decoding is accurate, it will look exactly the same as the Composited Proxy file. There is a Rec 709 backplate and proxy, a Rec 2020 PQ backplate and proxy, and an HLG backplate and proxy. The recommended approach for compositing sRGB subtitles to rec 709, rec 2020 PQ, and HLG is:
 
